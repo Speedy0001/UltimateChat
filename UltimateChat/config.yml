@@ -1,0 +1,13 @@
+#- "toReplace, symbol UTF-8-code"
+ReplaceSymbols: true
+Symbols:
+- "<3,\u2764"
+SetDeathMessage: true
+DeathMessageWithKiller: {Player} wurde von {Killer} erschlagen
+DeathMessageWithoutKiller: {Player} ist gestorben
+SetUnknownCommandMessage: true
+UnknownCommandMessage: Dieser Befehl existiert nicht!
+SetJoinMessage: true
+JoinMessage: {Player} ist dem Spiel beigetreten
+SetLeaveMessage: true
+LeaveMessage: {Player} hat das Spiel verlassen

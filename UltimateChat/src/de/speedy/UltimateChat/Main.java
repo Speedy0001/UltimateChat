@@ -39,6 +39,7 @@ public class Main extends JavaPlugin {
 		}
 		
 		registerEvents();
+		setPlugins();
 		
 	}
 	
@@ -46,6 +47,11 @@ public class Main extends JavaPlugin {
 		Bukkit.getPluginManager().registerEvents(new PlayerChatListener(this), this);
 		Bukkit.getPluginManager().registerEvents(new PlayerDeathListener(this), this);
 		Bukkit.getPluginManager().registerEvents(new PlayerCommandPerProcessListener(this), this);
+		Bukkit.getPluginManager().registerEvents(new PlayerJoinLeaveListener(this), this);
+	}
+	
+	public void setPlugins(){
+		Utilities.setPlugin(this);
 	}
 
 }
